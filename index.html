@@ -1,2 +1,83 @@
 <!-- AN HTML COMMENT -->
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="list">
+        <div class="polaroid-card death-cap">
+            <div class="polaroid">
+                <img src="src/deathCap.png" alt="Death Cap">
+            </div>
+            <div class="title">Death Cap</div>
+        </div>
+        <div class="polaroid-card paddy-straw">
+            <div class="polaroid">
+                <img src="src/paddyStraw.png" alt="Paddy Straw">
+            </div>
+            <div class="title">Paddy Straw</div>
+        </div>
+        <div class="polaroid-card destroying-angel">
+            <div class="polaroid">
+                <img src="src/destroyingAngel.png" alt="Destroying Angel">
+            </div>
+            <div class="title">Destroying Angel</div>
+        </div>
+        <div class="polaroid-card false-death-cap">
+            <div class="polaroid">
+                <img src="src/falseDeathCap.png" alt="False Death Cap">
+            </div>
+            <div class="title">False Death Cap</div>
+        </div>
+        <div class="polaroid-card puffball">
+            <div class="polaroid">
+                <img src="src/puffball.png" alt="Puffball">
+            </div>
+            <div class="title">Puffball</div>
+        </div>
+    </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: flex-start; 
+            align-items: flex-start; 
+            min-height: 100vh;
+            padding: 20px; 
+            background-color: #f8f8f8;
+        }
+        
+        .list {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: auto auto; 
+            gap: 10px 20px; 
+        }
+
+        .polaroid-card {
+            background: white;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 120px;
+            border-radius: 5px;
+        }
+
+        .polaroid img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .title {
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</body>
+</html>
